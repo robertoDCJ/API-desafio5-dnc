@@ -2,7 +2,7 @@ const livros = [
     {
         'id': 1,
         'titulo': 'A volta dos que não foram',
-        'paginas': 563,
+        'num_paginas': 563,
         'isbn': 154884,
         'editora': 'Universal'
     },
@@ -10,7 +10,7 @@ const livros = [
     {
         'id': 2,
         'titulo': 'As tranças do rei careca',
-        'paginas': 156,
+        'num_paginas': 156,
         'isbn': 285436,
         'editora': 'Branco'
     },
@@ -18,7 +18,7 @@ const livros = [
     {
         'id': 3,
         'titulo': 'Poeira em alto mar',
-        'paginas': 16,
+        'num_paginas': 16,
         'isbn': 368151,
         'editora': 'Castelo'
     },
