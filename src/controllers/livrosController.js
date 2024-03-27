@@ -73,10 +73,11 @@ const findLivroIndex = (id) => {
 const removeLivro = (req, res) => {
     let id = req.params.id;
     let indice = findLivroIndex(id);
-
+    const backUpLivros = [...livros];
+    
     if (indice >= 0) {
         livros.splice(indice, 1);
-        res.status(200).send('Livro removido com sucesso!');
+        res.status(200).send(`O livro "${backUpLivros[indice].titulo}" foi removido com sucesso!`);
     } else {
         res.status(406).send('Não foi encontrado nenhum livro com esse id');
     };
